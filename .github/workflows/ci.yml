@@ -28,6 +28,10 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install
 
-      # Run the tests
-      - name: Run Cucumber Tests
-        run: npm run test
+      # Install Xvfb for virtual display
+      - name: Install Xvfb
+        run: sudo apt-get install -y xvfb
+
+      # Run the tests using xvfb-run
+      - name: Run Cucumber Tests with Xvfb
+        run: xvfb-run npm run test
