@@ -1,12 +1,23 @@
 {
-  "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "outDir": "dist"
+  "name": "playwright-cucumber-project",
+  "version": "1.0.0",
+  "description": "End-to-end tests with Playwright and Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "report": "ts-node reporter.ts",
+    "test:ci": "npm run test && npm run report"
   },
-  "include": ["src"]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.0.0",
+    "playwright": "^1.43.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.1",
+    "multiple-cucumber-html-reporter": "^1.23.1"
+  }
 }

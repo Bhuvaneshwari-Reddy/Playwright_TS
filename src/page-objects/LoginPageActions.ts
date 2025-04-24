@@ -1,5 +1,5 @@
 import {LoginPageLocators} from './LoginPageLocators';
-import {pageFixture} from "../../hooks/pageFixture";
+import {pageFixture} from "../support/pageFixture";
 
 export  class LoginPageActions{
     readonly  locators:LoginPageLocators;

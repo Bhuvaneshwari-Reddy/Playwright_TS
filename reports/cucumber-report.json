@@ -1,0 +1,254 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-login-tests;user-is-on-the-login-page",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "User is on the Login Page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 226863499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User navigates to the application",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3637268300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Verify the Logo, title, url, username, password fields, login button, login and password credentials on the login page",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203399000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Login as a standard user",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61395899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Then User should be on the Landing page and verify the logo and URL",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12379299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify the PRODUCTS title and peek image visible on the home page",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10538400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Verify all the options Burger menu item, ALL ITEMS; ABOUT; LOGOUT AND RESET APP STATE are visible on inventory sidebar links on left side of the page",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66016700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Verify the shopping cart icon and product sort container visible on the top right of the page",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15426699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Verify the Inventory Product item list is visible",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5827600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Select the Product sort container as Price low to high and verify the inventory item list is displayed correctly in the right order selected",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16675600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Verify the footer text and swag bot footer is visible",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6956299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Click on “About” navbar link from the “inventory sidebar panel” and check whether user is navigated to saucelabs page",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2784128800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Verify the Twitter, Facebook, Linkedin logo visible",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16041900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Click on Twitter social link and verify user is navigated to Twitter page",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:113"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6360504300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Click on Facebook social link and verify user is navigated to Facebook page",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:123"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3056036700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Click on LinkedIn social link and verify user is navigated to LinkedIn page",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:133"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2840880600,
+              "error_message": "page.waitForLoadState: Target page, context or browser has been closed\n=========================== logs ===========================\n  \"domcontentloaded\" event fired\n============================================================\n    at World.<anonymous> (C:\\Users\\bhuvaneshwarib\\WebstormProjects\\Playwright-TS\\src\\step-definitions\\LoginSteps1.ts:138:19)\n    at fulfilled (C:\\Users\\bhuvaneshwarib\\WebstormProjects\\Playwright-TS\\src\\step-definitions\\LoginSteps1.ts:5:58)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Click on Twitter,LinkedIn and Facebook social link and verify user is navigated to LinkedIn page",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:143"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "User logout from the application and verify the login page",
+            "match": {
+              "location": "src\\step-definitions\\LoginSteps1.ts:162"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-login-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Login tests",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
