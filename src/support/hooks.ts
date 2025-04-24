@@ -12,7 +12,7 @@ let page:Page;
 let browser:Browser;
 
 BeforeAll({ timeout: 60 * 1000 },async function(){
-    browser=await chromium.launch({headless:false});
+    browser=await chromium.launch({headless:true});
     page=await browser.newPage();
     pageFixture.page=page;
 })

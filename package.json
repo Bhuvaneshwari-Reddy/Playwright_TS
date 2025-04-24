@@ -4,7 +4,7 @@
   "description": "End-to-end tests with Playwright and Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js",
+    "test": "cucumber-js --format @cucumber/pretty-formatter",
     "report": "ts-node reporter.ts",
     "test:ci": "npm run test && npm run report"
   },
@@ -17,6 +17,7 @@
     "playwright": "^1.43.1"
   },
   "devDependencies": {
+    "@cucumber/pretty-formatter": "^1.0.1",
     "multiple-cucumber-html-reporter": "^3.9.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.3"

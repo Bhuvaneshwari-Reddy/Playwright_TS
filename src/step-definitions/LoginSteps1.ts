@@ -73,10 +73,10 @@ Then("Verify the shopping cart icon and product sort container visible on the to
 
 Then("Verify the Inventory Product item list is visible",async function(){
     const products = await this.inventoryLocators.inventoryList.allTextContents();
-    console.log("All Product Items:", products);
+    // console.log("All Product Items:", products);
     expect(products.length).toEqual(6);
     const productNames=await this.inventoryLocators.inventoryItems.allTextContents();
-    console.log("All Product Items:", productNames);
+    // console.log("All Product Names:", productNames);
 })
 
 Then("Select the Product sort container as Price (low to high) and verify the inventory item list is displayed correctly in the right order selected",async function(){
