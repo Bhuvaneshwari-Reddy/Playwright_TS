@@ -2,40 +2,32 @@ name: Playwright Cucumber Tests
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # Checkout the code
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      # Set up Node.js
+      - uses: actions/setup-node@v3
         with:
           node-version: '18'
 
+      # Install dependencies
       - name: Install dependencies
         run: npm install
 
+      # Install Playwright browsers
+      - name: Install Playwright browsers
+        run: npx playwright install
+
+      # Run the tests
       - name: Run Cucumber Tests
         run: npm run test
-
-      - name: Generate Report with Timestamp
-        run: |
-          TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
-          mkdir -p reports
-          npm run report
-          REPORT_NAME="report-$TIMESTAMP.html"
-          cp ./reports/index.html ./reports/$REPORT_NAME
-          echo "Report saved as $REPORT_NAME"
-
-      - name: Upload Report Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-report
-          path: reports/
