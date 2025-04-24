@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 226863499
+              "duration": 211185400
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3637268300
+              "duration": 4383529800
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 203399000
+              "duration": 179623699
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 61395899
+              "duration": 62855799
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12379299
+              "duration": 7121399
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10538400
+              "duration": 361165699
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 66016700
+              "duration": 34273199
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15426699
+              "duration": 18577699
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5827600
+              "duration": 7285599
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16675600
+              "duration": 14142499
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6956299
+              "duration": 7372699
             }
           },
           {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2784128800
+              "duration": 2864237499
             }
           },
           {
@@ -170,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16041900
+              "duration": 18094599
             }
           },
           {
@@ -183,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6360504300
+              "duration": 6583545500
             }
           },
           {
@@ -196,7 +196,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3056036700
+              "duration": 4321283500
             }
           },
           {
@@ -208,9 +208,8 @@
               "location": "src\\step-definitions\\LoginSteps1.ts:133"
             },
             "result": {
-              "status": "failed",
-              "duration": 2840880600,
-              "error_message": "page.waitForLoadState: Target page, context or browser has been closed\n=========================== logs ===========================\n  \"domcontentloaded\" event fired\n============================================================\n    at World.<anonymous> (C:\\Users\\bhuvaneshwarib\\WebstormProjects\\Playwright-TS\\src\\step-definitions\\LoginSteps1.ts:138:19)\n    at fulfilled (C:\\Users\\bhuvaneshwarib\\WebstormProjects\\Playwright-TS\\src\\step-definitions\\LoginSteps1.ts:5:58)"
+              "status": "passed",
+              "duration": 3314269299
             }
           },
           {
@@ -222,8 +221,8 @@
               "location": "src\\step-definitions\\LoginSteps1.ts:143"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2839932399
             }
           },
           {
@@ -235,8 +234,8 @@
               "location": "src\\step-definitions\\LoginSteps1.ts:162"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 952530299
             }
           }
         ],

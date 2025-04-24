@@ -13,11 +13,12 @@
   "license": "ISC",
   "dependencies": {
     "@cucumber/cucumber": "^9.0.0",
+    "@playwright/test": "^1.52.0",
     "playwright": "^1.43.1"
   },
   "devDependencies": {
-    "typescript": "^5.3.3",
+    "multiple-cucumber-html-reporter": "^3.9.2",
     "ts-node": "^10.9.1",
-    "multiple-cucumber-html-reporter": "^3.9.2"
+    "typescript": "^5.3.3"
   }
 }
