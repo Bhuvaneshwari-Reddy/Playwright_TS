@@ -2,18 +2,20 @@ import {Given,When,Then,setDefaultTimeout} from "@cucumber/cucumber";
 import {expect} from "@playwright/test";
 import {pageFixture} from "../support/pageFixture";
 import {Navigate} from "../utils/Navigate";
+import {LOGIN_URL,INVENTORY_URL,ABOUT_PAGE_URL,Error_msg,FooterText,TWITTER_URL,FACEBOOK_URL,LINKEDIN_URL}  from "../utils/Constants";
+
 
 setDefaultTimeout(10 * 1000);
 
 Given("User navigates to the application", async function () {
     const navigator = new Navigate(pageFixture.page);
-    await navigator.goToSauceDemo(); // you can also use `goToUrl("https://www.saucedemo.com/")`
+    await navigator.goToSauceDemo();
 });
 
 Then("Verify the Logo, title, url, username, password fields, login button, login and password credentials on the login page",async function(){
     //assertions
     await expect(this.loginLocators.logo).toBeVisible();
-    await expect(pageFixture.page).toHaveURL("https://www.saucedemo.com/");
+    await expect(pageFixture.page).toHaveURL(LOGIN_URL);
     await expect(pageFixture.page).toHaveTitle("Swag Labs");
     await expect(this.loginLocators.usernameInput).toBeVisible();
     await expect(this.loginLocators.passwordInput).toBeVisible();
@@ -21,23 +23,23 @@ Then("Verify the Logo, title, url, username, password fields, login button, logi
 
     //valid login
     await this.loginPage.login("standard_user", "secret_sauce");
-    await expect(pageFixture.page).toHaveURL("https://www.saucedemo.com/inventory.html");
+    await expect(pageFixture.page).toHaveURL(INVENTORY_URL);
 
     //Back and Invalid Login
     await pageFixture.page.goBack();
     await this.loginPage.login("wrong_user","wrong_password");
     await expect(this.loginLocators.errorMsg).toBeVisible();
-    await expect(this.loginLocators.errorMsg).toHaveText("Epic sadface: Username and password do not match any user in this service");
+    await expect(this.loginLocators.errorMsg).toHaveText(Error_msg);
 })
 
 Then("Login as a standard user",async function(){
     await this.loginPage.login("standard_user", "secret_sauce");
-    await expect(pageFixture.page).toHaveURL("https://www.saucedemo.com/inventory.html");
+    await expect(pageFixture.page).toHaveURL(INVENTORY_URL);
 })
 
 Then("Then User should be on the Landing page and verify the logo and URL",async function(){
     await expect(this.inventoryLocators.logo).toBeVisible();
-    await expect(pageFixture.page).toHaveURL("https://www.saucedemo.com/inventory.html");
+    await expect(pageFixture.page).toHaveURL(INVENTORY_URL);
 })
 
 Then("Verify the PRODUCTS title and peek image visible on the home page",async function(){
@@ -91,13 +93,13 @@ Then("Select the Product sort container as Price (low to high) and verify the in
 
 Then("Verify the footer text and swag bot footer is visible",async function(){
     await expect(this.inventoryLocators.footerText).toBeVisible();
-    await expect(this.inventoryLocators.footerText).toHaveText("© 2025 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy");
+    await expect(this.inventoryLocators.footerText).toHaveText(FooterText);
     await expect(this.inventoryLocators.footerText).toContainText("Sauce Labs. All Rights Reserved.");
 })
 
 Then("Click on “About” navbar link from the “inventory sidebar panel” and check whether user is navigated to saucelabs page",async  function(){
     await this.inventoryPage.clickAbout();
-    await expect(pageFixture.page).toHaveURL("https://saucelabs.com/");
+    await expect(pageFixture.page).toHaveURL(ABOUT_PAGE_URL);
     await  expect(this.inventoryLocators.saucePage).toBeVisible();
     await pageFixture.page.goBack();
 })
@@ -107,7 +109,6 @@ Then("Verify the Twitter, Facebook, Linkedin logo visible",async function(){
     await expect(this.inventoryLocators.facebookLink).toBeVisible();
     await expect(this.inventoryLocators.linkedinLink).toBeVisible();
 
-
 })
 
 Then("Click on Twitter social link and verify user is navigated to Twitter page", { timeout: 10 * 1000 }, async function () {
@@ -116,7 +117,7 @@ Then("Click on Twitter social link and verify user is navigated to Twitter page"
         this.inventoryLocators.twitterLink.click()
     ])
     await newPage.waitForLoadState();
-    expect(newPage.url()).toContain("https://x.com/saucelabs")
+    expect(newPage.url()).toContain(TWITTER_URL)
     await newPage.close();
 });
 
@@ -126,7 +127,7 @@ Then("Click on Facebook social link and verify user is navigated to Facebook pag
         this.inventoryLocators.facebookLink.click()
     ]);
     await newPage.waitForLoadState();
-    expect(newPage.url()).toContain("https://www.facebook.com/saucelabs");
+    expect(newPage.url()).toContain(FACEBOOK_URL);
     await newPage.close();
 });
 
@@ -136,15 +137,15 @@ Then("Click on LinkedIn social link and verify user is navigated to LinkedIn pag
         this.inventoryLocators.linkedinLink.click()
     ]);
     await newPage.waitForLoadState();
-    expect(newPage.url()).toContain("https://www.linkedin.com/company/sauce-labs/");
+    expect(newPage.url()).toContain(LINKEDIN_URL);
     await newPage.close();
 });
 
 Then ("Click on Twitter,LinkedIn and Facebook social link and verify user is navigated to LinkedIn page", async function (){
     const socialLinks = [
-        { name: "Twitter", expectedUrl: "https://x.com/saucelabs" },
-        { name: "Facebook", expectedUrl: "https://www.facebook.com/saucelabs" },
-        { name: "LinkedIn", expectedUrl: "https://www.linkedin.com/company/sauce-labs/" }
+        { name: "Twitter", expectedUrl: TWITTER_URL },
+        { name: "Facebook", expectedUrl: FACEBOOK_URL },
+        { name: "LinkedIn", expectedUrl: LINKEDIN_URL }
     ];
 
     for (const link of socialLinks) {

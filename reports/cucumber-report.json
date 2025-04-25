@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36778899
+              "duration": 213944500
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 3,
             "name": "User navigates to the application",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:8"
+              "location": "src\\step-definitions\\LoginSteps1.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 6862072799
+              "duration": 3775275599
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 6,
             "name": "Verify the Logo, title, url, username, password fields, login button, login and password credentials on the login page",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:13"
+              "location": "src\\step-definitions\\LoginSteps1.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 176781899
+              "duration": 197644199
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 7,
             "name": "Login as a standard user",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:33"
+              "location": "src\\step-definitions\\LoginSteps1.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 44595799
+              "duration": 58588099
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 8,
             "name": "Then User should be on the Landing page and verify the logo and URL",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:38"
+              "location": "src\\step-definitions\\LoginSteps1.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 4062799
+              "duration": 6583099
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 9,
             "name": "Verify the PRODUCTS title and peek image visible on the home page",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:43"
+              "location": "src\\step-definitions\\LoginSteps1.ts:45"
             },
             "result": {
               "status": "passed",
-              "duration": 365915499
+              "duration": 8353000
             }
           },
           {
@@ -88,11 +88,11 @@
             "line": 10,
             "name": "Verify all the options Burger menu item, ALL ITEMS; ABOUT; LOGOUT AND RESET APP STATE are visible on inventory sidebar links on left side of the page",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:49"
+              "location": "src\\step-definitions\\LoginSteps1.ts:51"
             },
             "result": {
               "status": "passed",
-              "duration": 35067199
+              "duration": 63555599
             }
           },
           {
@@ -101,11 +101,11 @@
             "line": 11,
             "name": "Verify the shopping cart icon and product sort container visible on the top right of the page",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:61"
+              "location": "src\\step-definitions\\LoginSteps1.ts:63"
             },
             "result": {
               "status": "passed",
-              "duration": 17284000
+              "duration": 14765599
             }
           },
           {
@@ -114,11 +114,11 @@
             "line": 12,
             "name": "Verify the Inventory Product item list is visible",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:74"
+              "location": "src\\step-definitions\\LoginSteps1.ts:76"
             },
             "result": {
               "status": "passed",
-              "duration": 6434599
+              "duration": 8390800
             }
           },
           {
@@ -127,11 +127,11 @@
             "line": 13,
             "name": "Select the Product sort container as Price low to high and verify the inventory item list is displayed correctly in the right order selected",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:82"
+              "location": "src\\step-definitions\\LoginSteps1.ts:84"
             },
             "result": {
               "status": "passed",
-              "duration": 13863699
+              "duration": 13770999
             }
           },
           {
@@ -140,11 +140,11 @@
             "line": 14,
             "name": "Verify the footer text and swag bot footer is visible",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:92"
+              "location": "src\\step-definitions\\LoginSteps1.ts:94"
             },
             "result": {
               "status": "passed",
-              "duration": 6429200
+              "duration": 7186999
             }
           },
           {
@@ -153,11 +153,11 @@
             "line": 15,
             "name": "Click on “About” navbar link from the “inventory sidebar panel” and check whether user is navigated to saucelabs page",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:98"
+              "location": "src\\step-definitions\\LoginSteps1.ts:100"
             },
             "result": {
               "status": "passed",
-              "duration": 3769093400
+              "duration": 3695909999
             }
           },
           {
@@ -166,11 +166,11 @@
             "line": 16,
             "name": "Verify the Twitter, Facebook, Linkedin logo visible",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:105"
+              "location": "src\\step-definitions\\LoginSteps1.ts:107"
             },
             "result": {
               "status": "passed",
-              "duration": 13764900
+              "duration": 14537599
             }
           },
           {
@@ -179,11 +179,11 @@
             "line": 17,
             "name": "Click on Twitter social link and verify user is navigated to Twitter page",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:113"
+              "location": "src\\step-definitions\\LoginSteps1.ts:114"
             },
             "result": {
               "status": "passed",
-              "duration": 6160330199
+              "duration": 6612658100
             }
           },
           {
@@ -192,11 +192,11 @@
             "line": 18,
             "name": "Click on Facebook social link and verify user is navigated to Facebook page",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:123"
+              "location": "src\\step-definitions\\LoginSteps1.ts:124"
             },
             "result": {
               "status": "passed",
-              "duration": 4407376100
+              "duration": 4962843500
             }
           },
           {
@@ -205,11 +205,11 @@
             "line": 19,
             "name": "Click on LinkedIn social link and verify user is navigated to LinkedIn page",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:133"
+              "location": "src\\step-definitions\\LoginSteps1.ts:134"
             },
             "result": {
               "status": "passed",
-              "duration": 3286033299
+              "duration": 3324668699
             }
           },
           {
@@ -218,11 +218,11 @@
             "line": 20,
             "name": "Click on Twitter,LinkedIn and Facebook social link and verify user is navigated to LinkedIn page",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:143"
+              "location": "src\\step-definitions\\LoginSteps1.ts:144"
             },
             "result": {
               "status": "passed",
-              "duration": 2710912300
+              "duration": 2679084399
             }
           },
           {
@@ -231,11 +231,11 @@
             "line": 21,
             "name": "User logout from the application and verify the login page",
             "match": {
-              "location": "src\\step-definitions\\LoginSteps1.ts:162"
+              "location": "src\\step-definitions\\LoginSteps1.ts:163"
             },
             "result": {
               "status": "passed",
-              "duration": 930304000
+              "duration": 931861300
             }
           }
         ],

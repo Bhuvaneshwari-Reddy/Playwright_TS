@@ -1,4 +1,5 @@
 import { Page } from '@playwright/test';
+import {LOGIN_URL} from "./Constants";
 
 export class Navigate{
 
@@ -9,6 +10,6 @@ export class Navigate{
 
     }
     async  goToSauceDemo(){
-        await this.page.goto("https://www.saucedemo.com/");
+        await this.page.goto(LOGIN_URL);
     }
 }
