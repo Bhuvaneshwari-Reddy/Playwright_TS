@@ -12,6 +12,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    environment: dev
     # Set environment variables (from GitHub Actions environment variables in the "dev" environment)
     env:
       LOGIN_URL: ${{ vars.LOGIN_URL }}
