@@ -12,14 +12,15 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    # Set environment variables (from GitHub Actions environment)
+    # Set environment variables (from GitHub Actions environment variables in the "dev" environment)
     env:
-        LOGIN_URL: ${{ vars.LOGIN_URL }}
-        INVENTORY_URL: ${{ vars.INVENTORY_URL }}
-        ABOUT_PAGE_URL: ${{ vars.ABOUT_PAGE_URL }}
-        TWITTER_URL: ${{ vars.TWITTER_URL }}
-        FACEBOOK_URL: ${{ vars.FACEBOOK_URL }}
-        LINKEDIN_URL: ${{ vars.LINKEDIN_URL }}
+      LOGIN_URL: ${{ vars.LOGIN_URL }}
+      INVENTORY_URL: ${{ vars.INVENTORY_URL }}
+      ABOUT_PAGE_URL: ${{ vars.ABOUT_PAGE_URL }}
+      TWITTER_URL: ${{ vars.TWITTER_URL }}
+      FACEBOOK_URL: ${{ vars.FACEBOOK_URL }}
+      LINKEDIN_URL: ${{ vars.LINKEDIN_URL }}
+
     steps:
       # Checkout the code
       - uses: actions/checkout@v3
@@ -40,6 +41,16 @@ jobs:
       # Install Xvfb for virtual display
       - name: Install Xvfb
         run: sudo apt-get install -y xvfb
+
+      # Debug Environment Variables (optional for troubleshooting)
+      - name: Debug Environment Variables
+        run: |
+          echo "LOGIN_URL=${{ vars.LOGIN_URL }}"
+          echo "INVENTORY_URL=${{ vars.INVENTORY_URL }}"
+          echo "ABOUT_PAGE_URL=${{ vars.ABOUT_PAGE_URL }}"
+          echo "TWITTER_URL=${{ vars.TWITTER_URL }}"
+          echo "FACEBOOK_URL=${{ vars.FACEBOOK_URL }}"
+          echo "LINKEDIN_URL=${{ vars.LINKEDIN_URL }}"
 
       # Run the tests using xvfb-run
       - name: Run Cucumber Tests with Xvfb
