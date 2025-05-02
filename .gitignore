@@ -8,5 +8,7 @@ yarn-error.log*
 .env
 /.pnp
 .pnp.js
-
-.vscode/*
+assets
+features
+cucumber-report.html
+@rerun.txt
